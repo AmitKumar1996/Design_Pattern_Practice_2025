@@ -13,14 +13,17 @@ public class LinkedListDemo {
 		l.add("kumar");
 		
 		l.add("yadav");
+		
 		System.out.println(l);
 		
 		l.add(29);
+		
 		System.out.println(l);
 		
 		l.set(0, "Raja");
 		
 		System.out.println(l);
+		
 		l.removeLast();
 		
 		
