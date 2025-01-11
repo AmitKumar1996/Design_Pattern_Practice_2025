@@ -5,8 +5,6 @@ import java.util.LinkedList;
 public class LinkedListDemo {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
 		
 		LinkedList l= new LinkedList();
 		
@@ -15,6 +13,15 @@ public class LinkedListDemo {
 		l.add("kumar");
 		
 		l.add("yadav");
+		System.out.println(l);
+		
+		l.add(29);
+		System.out.println(l);
+		
+		l.set(0, "Raja");
+		
+		System.out.println(l);
+		l.removeLast();
 		
 		
 	
