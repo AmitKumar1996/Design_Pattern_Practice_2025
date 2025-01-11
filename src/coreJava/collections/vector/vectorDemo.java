@@ -1,4 +1,4 @@
-package coreJava.collection.vector;
+package coreJava.collections.vector;
 
 import java.util.Vector;
 public class vectorDemo {

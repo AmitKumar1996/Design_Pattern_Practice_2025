@@ -1,4 +1,4 @@
-package coreJava.collection.stack;
+package coreJava.collections.stack;
 
 import java.util.Stack;
 
