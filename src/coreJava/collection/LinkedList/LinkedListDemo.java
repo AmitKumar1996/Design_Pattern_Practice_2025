@@ -18,8 +18,7 @@ public class LinkedListDemo {
 		
 		
 	
-		System.out.println(l
-				);
+		System.out.println(l);
 	}
 
 }
