@@ -29,6 +29,10 @@ public class CreateDao_01_15 {
 CreateDao_01_15 obj3= new CreateDao_01_15().getInstance();
 		
 		System.out.println(obj3.hashCode());
+		
+CreateDao_01_15 obj4= new CreateDao_01_15().getInstance();
+		
+		System.out.println(obj4.hashCode());
 
 	}
 
