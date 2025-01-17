@@ -26,6 +26,13 @@ CreateDao_01_17 obj3= new CreateDao_01_17().getInstance();
 		
 		
 		System.out.println(obj3.hashCode());
+		
+		
+		
+CreateDao_01_17 obj4= new CreateDao_01_17().getInstance();
+		
+		
+		System.out.println(obj4.hashCode());
 		// TODO Auto-generated method stub
 
 	}
