@@ -1,6 +1,6 @@
 package declarationAndAccessModifier;
 
-import static java.lang.System.;pvcf ddddddddddd;
+import static java.lang.System.out;
 
 public class fullyQualifiedName{
 

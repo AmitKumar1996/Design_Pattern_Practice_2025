@@ -27,7 +27,7 @@ public class CreateDao_01_24 {
 		
 		System.out.println(obj2.hashCode());
 		
-		// TODO Auto-generated method stub
+		
 
 	}
 
