@@ -22,7 +22,7 @@ public class MapToList_01_30 {
 	
 	System.out.println(keyList);
 	
-List<String> values=	map.values().stream().collect(Collectors.toList());
+     List<String> values=	map.values().stream().collect(Collectors.toList());
      System.out.println(values);
 
 	}
