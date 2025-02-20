@@ -1,4 +1,4 @@
-package declarationAndAccessModifier;
+package declarationAndAccessModifier.pkg;
 
 //import static java.lang.Math.sqrt;
 

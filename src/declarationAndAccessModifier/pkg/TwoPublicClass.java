@@ -1,4 +1,4 @@
-package declarationAndAccessModifier;
+package declarationAndAccessModifier.pkg;
 
 //public class TwoPublicClass {
 //
