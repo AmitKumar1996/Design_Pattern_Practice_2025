@@ -1,12 +1,11 @@
 package declarationAndAccessModifier;
 
-class Amit {
+public class Amit {
  public static void main(String[] args) {
 	 System.out.println("Hi Amit  class this 0 ");
  }
 }
-
-class Amit2 {
+ class Amit2 {
 	 public static void main(String[] args) {
 		 System.out.println("Hi Amit  class this 1 ");
 	 }
