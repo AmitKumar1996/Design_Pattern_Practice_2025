@@ -29,16 +29,16 @@ public class ReverseArray {
 //		System.out.print(" "+array[i]);
 		
 		
-		String s="aabbccd";
-		
-		HashMap<String, Integer> map=new HashMap<>();
-		
-		for(int i=0;i<s.length();i++) {
-			if(map.containsKey(s.charAt(i))) {
-				map.put(s.charAt(i), )
-			}
-			map.put()
-		}
+//		String s="aabbccd";
+//		
+//		HashMap<String, Integer> map=new HashMap<>();
+//		
+//		for(int i=0;i<s.length();i++) {
+//			if(map.containsKey(s.charAt(i))) {
+//				map.put(s.charAt(i), )
+//			}
+//			//map.put()
+//		}
 		
 		
 		// TODO Auto-generated method stub
