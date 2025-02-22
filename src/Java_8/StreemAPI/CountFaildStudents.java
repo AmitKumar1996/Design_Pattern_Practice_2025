@@ -1,7 +1,10 @@
 package Java_8.StreemAPI;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class CountFaildStudents {
 
@@ -13,6 +16,11 @@ public class CountFaildStudents {
 		                System.out.println(faildStudents);
 
 		                System.out.println(counts1);
+		                List<Integer> collectSorted = marks.stream().sorted().collect(Collectors.toList());
+		                System.out.println(collectSorted);
+		                      //marks.stream().distinct().sorted(Comparator.reverseOrder()).limit(1).getClass();
+		                
+		                
 	}
 
 }
