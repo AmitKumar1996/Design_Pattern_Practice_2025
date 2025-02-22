@@ -12,6 +12,7 @@ public class CountFaildStudents {
 		                
 		                System.out.println(faildStudents);
 
+		                System.out.println(counts1);
 	}
 
 }
