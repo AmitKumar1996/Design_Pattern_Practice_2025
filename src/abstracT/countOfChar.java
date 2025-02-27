@@ -2,6 +2,9 @@ package abstracT;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 public class countOfChar {
 
@@ -36,7 +39,14 @@ public class countOfChar {
 		System.out.println(map);
 		
 		
+		
+		 Map<Character, Long> frequencyMap = a.stream()
+	                .collect(Collectors.groupingBy(c -> c, Collectors.counting()));
+
+	        System.out.println("Character Frequency Map: " + frequencyMap);
 
 	}
+	
+	
 
 }
