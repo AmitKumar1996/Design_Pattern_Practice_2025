@@ -25,7 +25,7 @@ public class StringTest {
      ArrayList<String> list=new ArrayList<>();
      
     for(int i=0;i<sentence.length();i++) {
-     list.add(sentence.charAt(i));
+    // list.add(sentence.charAt(i));
      
     }
     
