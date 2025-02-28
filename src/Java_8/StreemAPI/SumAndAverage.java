@@ -22,3 +22,10 @@ public class SumAndAverage {
 //✅ Streams use functional programming principles.
 //✅ Parallel Streams can improve performance but should be used wisely.
 //✅ Operations like map(), filter(), collect() are commonly used in interviews.
+
+
+
+
+
+
+
