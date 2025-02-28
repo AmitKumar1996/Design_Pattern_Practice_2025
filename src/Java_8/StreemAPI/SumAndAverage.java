@@ -15,3 +15,10 @@ public class SumAndAverage {
         System.out.println("Average: " + (average.isPresent() ? average.getAsDouble() : "N/A"));
     }
 }
+
+
+//Key Takeaways
+//✅ Stream API makes code concise and readable.
+//✅ Streams use functional programming principles.
+//✅ Parallel Streams can improve performance but should be used wisely.
+//✅ Operations like map(), filter(), collect() are commonly used in interviews.
