@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
 import java.util.stream.Collectors;
 
 import abstracT.countOfChar;
@@ -13,7 +14,7 @@ public class FrequencyOfCharacter {
 	public static void main(String[] args) {
 		
 		
-		String s="aaababahaaha";
+		String s="aacccababahaaha";
 		
 		List<Character> list= new ArrayList<>();
 		
@@ -21,7 +22,8 @@ public class FrequencyOfCharacter {
 			list.add(s.charAt(i));
 			
 		}
-		System.out.println(list);
+		list.add(null);
+	//	System.out.println(list);
 		
 		
 		HashMap<Character, Integer> map=new HashMap<>();
@@ -34,11 +36,18 @@ public class FrequencyOfCharacter {
 				map.put(c, 1);
 			}
 		}
+		//System.out.println(map);   123 4  a b c d
 		
-		System.out.println(map);
 		
-		Map<Character, Long> collect = list.stream().collect(Collectors.groupingBy(c -> c, Collectors.counting()));
-		System.out.println(collect);
+		
+	  //  TreeMap<Character, Long> collect = list.stream().collect(Collectors.groupingBy(data->data, TreeMap :: new, Collectors.counting()));
+		Map<Character, Long> collect = list.stream().collect(Collectors.groupingBy(data->data,  Collectors.counting()));
+	   System.out.println(collect);
+		
+//		System.out.println(map);
+//		
+//		Map<Character, Long> collect = list.stream().collect(Collectors.groupingBy(c -> c, Collectors.counting()));
+//		System.out.println(collect);
 
 	}
 
