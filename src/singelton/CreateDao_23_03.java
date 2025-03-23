@@ -15,7 +15,7 @@ public class CreateDao_23_03 {
 		System.out.println(obj1.hashCode());
 		CreateDao_23_03 obj2=new CreateDao_23_03().getInstance();
 		System.out.println(obj2.hashCode());
-		// TODO Auto-generated method stub
+		
 
 	}
 
