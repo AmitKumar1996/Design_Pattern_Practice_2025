@@ -10,17 +10,18 @@ public class SortStringbasedOnNumberOfCheracter {
 	public static void main(String[] args) {
 		ArrayList<String> l= new ArrayList<String>();
 		
-		l.add("A");
+		l.add("Ad");
 		l.add("AA");
-		l.add("AAAAA");
+		l.add("AbAAAA");
 		l.add("AAAA");
 		l.add("AAA");
 		
 		
-		for(String s:l)
-		System.out.println(s);
+//		for(String s:l)
+//		System.out.println(s);
 
-		
+	List<String> l3=l.stream().sorted().collect(Collectors.toList());
+	System.out.println("Not sordet based on String Length: "+l3);
 		
 		Comparator<String> c=(s1, s2)->{
 			int l1=s1.length();
@@ -32,7 +33,7 @@ public class SortStringbasedOnNumberOfCheracter {
 		
 		List<String> collect = l.stream().sorted(c).collect(Collectors.toList());
 		
-		System.out.println(collect);
+		System.out.println("Sorted Based on Length: "+collect);
 	}
 
 }
