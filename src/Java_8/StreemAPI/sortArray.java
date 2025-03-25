@@ -22,6 +22,8 @@ public class sortArray {
 			}
 			
 		}
+		
+		
 //		
 //		int 
 //		
@@ -34,10 +36,12 @@ public class sortArray {
 		}
 			
 			
+		for(Integer i: array )
 			
+			System.out.println(i);	
 			
 		}
 		
 	}
 
-}
+
