@@ -8,27 +8,39 @@ public class PatentData2 {
 
     public static List<TestRecd> getAll() {
         return Stream.of(
-            // Patient 101: 1 unbilled, 1 billed
             new TestRecd("101", "Blood Test", false),
             new TestRecd("101", "X-Ray", true),
-
-            // Patient 102: all billed
             new TestRecd("102", "MRI", true),
             new TestRecd("102", "CT Scan", true),
-
-            // Patient 103: all unbilled
             new TestRecd("103", "ECG", false),
             new TestRecd("103", "Urine Test", false),
-
-            // Patient 104: mix of true/false
             new TestRecd("104", "Covid Test", false),
             new TestRecd("104", "Sugar Test", true),
-
-            // Patient 105: only one record, unbilled
             new TestRecd("105", "Thyroid Test", false),
+            new TestRecd("106", "Vitamin D", true),
 
-            // Patient 106: only one record, billed
-            new TestRecd("106", "Vitamin D", true)
+            // Extra 15 diverse cases
+            new TestRecd("107", "Liver Function", true),
+            new TestRecd("107", "Kidney Function", true),
+            new TestRecd("108", "BP Check", false),
+            new TestRecd("109", "Eye Test", false),
+            new TestRecd("109", "Hearing Test", true),
+            new TestRecd("110", "Heart Rate", false),
+            new TestRecd("111", "Blood Pressure", true),
+            new TestRecd("112", "Allergy Test", true),
+            new TestRecd("112", "Cholesterol", false),
+            new TestRecd("113", "Calcium Test", false),
+            new TestRecd("113", "Iron Test", false),
+            new TestRecd("114", "Lung Capacity", true),
+            new TestRecd("115", "Glucose Tolerance", false),
+            new TestRecd("116", "Vision Test", true),
+            new TestRecd("116", "Hearing Test", false),
+            new TestRecd("117", "Dengue", false),
+            new TestRecd("117", "Malaria", true),
+            new TestRecd("118", "Hepatitis B", true),
+            new TestRecd("119", "HIV Test", false),
+            new TestRecd("120", "Skin Allergy", true),
+            new TestRecd("121", "Skin Allergy", false)
         ).collect(Collectors.toList());
     }
 }
