@@ -1,4 +1,4 @@
-package abstracT;
+package singelton;
 
 public class CreateDao {
 	

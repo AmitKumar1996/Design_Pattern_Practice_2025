@@ -1,4 +1,4 @@
-package abstracT;
+package coreJava.collections.ArrayList;
 
 import java.util.HashSet;
 

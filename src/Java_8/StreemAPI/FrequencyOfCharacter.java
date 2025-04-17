@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.TreeMap;
 import java.util.stream.Collectors;
 
-import abstracT.countOfChar;
+import Java_8.countOfChar;
 
 public class FrequencyOfCharacter {
 
