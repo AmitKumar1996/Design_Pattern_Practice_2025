@@ -8,9 +8,10 @@ package abstracT.Example_3;
 
 
 
-//✅ Abstract class
-public abstract class Parent {
 
- // ✅ Abstract method with no body
- public abstract void methodOne();
-}
+////✅ Abstract class
+//public abstract class Parent {
+//
+// // ✅ Abstract method with no body
+// public abstract void methodOne();
+//}
