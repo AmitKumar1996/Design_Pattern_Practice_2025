@@ -8,13 +8,15 @@ public class countNumberOfWord {
 
 	public class Main {
 	    public static void main(String[] args) {
-	        String str = "Amit Kumar amit kumar";
+	        String str = "Amit Kumar          a amit kumar";
 
 	        // Make it case-insensitive
 	        str = str.toLowerCase();
+	        str= str.replaceAll("\\s+", "");
+	        System.out.println(str);
 
 	        HashMap<String, Integer> map = new HashMap<>();
-
+                   
 	        String[] words = str.split(" ");
 
 	        for (String word : words) {
