@@ -1,4 +1,4 @@
-package abstracT;
+package Java_8;
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.AbstractMap.SimpleEntry;
