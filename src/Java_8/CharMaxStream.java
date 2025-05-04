@@ -20,6 +20,9 @@ public class CharMaxStream {
                 .getKey();
 
         System.out.println("Most frequent character: " + maxChar);
+        
+        
+ 
     }
 }
 

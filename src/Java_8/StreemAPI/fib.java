@@ -96,7 +96,7 @@ public class fib {
 		
 		// TODO Auto-generated method stub
 
-	}
+	
 	
 	// 0 1 
 
