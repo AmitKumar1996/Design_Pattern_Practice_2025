@@ -24,7 +24,15 @@ public class MapToList_01_30 {
 	
      List<String> values=	map.values().stream().collect(Collectors.toList());
      System.out.println(values);
+     
+     for(Integer i : keyList) {
+    	 System.out.println(i);
+     }
+     for(String s: values) {
+    	 System.out.println(values);
+     }
 
+     
 	}
 
 }
