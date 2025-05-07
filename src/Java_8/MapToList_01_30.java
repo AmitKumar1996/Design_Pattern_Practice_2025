@@ -32,6 +32,9 @@ public class MapToList_01_30 {
     	 System.out.println(values);
      }
 
+     for(String s: map.values()) {
+    	 System.out.println(s);
+     }
      
 	}
 
