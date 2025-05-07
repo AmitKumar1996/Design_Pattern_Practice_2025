@@ -14,6 +14,21 @@ public class SecondHighest {
                 .findFirst();
 
         System.out.println("Second Highest Number: " + secondHighest.orElse(-1));
+        System.out.println("---------------------------------------------------------------------------------------------------------------------------------------------------------");
+
+        
+        OptionalInt first = Arrays.stream(numbers).distinct().sorted().skip(1).findFirst();
+        
+        if(first.isPresent()) {
+        	System.out.println(first.getAsInt());
+        }else {
+        	System.out.println("Not present ");
+        }
+        
+        System.out.println("---------------------------------------------------------------------------------------------------------------------------------------------------------");
+
+        
+        
     }
 }
 
