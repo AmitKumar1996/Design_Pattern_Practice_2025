@@ -27,6 +27,12 @@ for(Integer i: listKey) {
 }
 
 
+List<String> collect = map.values().stream().collect(Collectors.toList());
+
+for(String s: collect) {
+	System.out.println(s);
+}
+
 		
 		// TODO Auto-generated method stub
 
