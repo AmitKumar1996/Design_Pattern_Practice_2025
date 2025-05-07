@@ -10,5 +10,10 @@ public class SumOfOddNumbers {
                               .sum();  // Sums them up
 
         System.out.println("Sum of odd numbers: " + sumOfOdds);
+        
+        
+       Long count= Arrays.stream(numbers).filter(n->n%2!=0).count();
+       
+       System.out.println(count);
     }
 }
