@@ -1,5 +1,6 @@
 package Java_8;
 
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -18,6 +19,22 @@ List<String> value=map.values().stream().collect(Collectors.toList());
 System.out.println(key);
 System.out.println(value);
 
+
+for(Integer i: key) {
+	System.out.println(i);
+}
+
+for(String s: value) {
+	System.out.println(s);
+}
+
+for(Integer i : map.keySet()) {
+	System.out.println(i);
+}
+
+for(String s1: map.values()) {
+	System.out.println(s1);
+}
 
 
 	}

@@ -15,7 +15,7 @@ public class MapToList {
 		map.put(1, "Amit");
 		map.put(2, "kumar");
 		map.put(3, "yadav");
-		
+	
 		
 		List<Integer> listKey= new ArrayList<>();
 		

@@ -23,6 +23,9 @@ public class MargeArrayAndFindMedian {
         int[] arr1 = {3, 5, 2};
         int[] arr2 = {6, 1, 4};
 
+        
+       
+        
         // Combine the two arrays into one using Java 8 Streams
         int[] combinedArray = IntStream.concat(Arrays.stream(arr1), Arrays.stream(arr2))
                                       .sorted()
