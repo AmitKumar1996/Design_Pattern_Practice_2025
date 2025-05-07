@@ -36,6 +36,10 @@ public class MapToList_01_30 {
     	 System.out.println(s);
      }
      
+     for(Integer i: map.keySet()) {
+    	 System.out.println(i);
+     }
+     
 	}
 
 }
