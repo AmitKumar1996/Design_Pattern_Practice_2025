@@ -5,7 +5,7 @@ import java.util.Comparator;
 
 public class LongestWord {
     public static void main(String[] args) {
-        String sentence = "Java 8 streams are very useful in programming";
+        String sentence = "Java 8 streamssssssssssssssssssssssssss are very useful in programming";
 
         /* Split sentence into words, find the longest word using max() */
         String longestWord = Arrays.stream(sentence.split(" ")) // Convert sentence into words
@@ -13,6 +13,7 @@ public class LongestWord {
                 .orElse(null); // Return null if no word found
 
         System.out.println("Longest Word: " + longestWord);
+        System.out.println("______________________________________________________________________________________________________________________________________________");
     }
 }
 
