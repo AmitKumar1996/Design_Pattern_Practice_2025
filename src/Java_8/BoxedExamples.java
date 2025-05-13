@@ -21,11 +21,13 @@ public class BoxedExamples {
         System.out.println("\n--- Example 2: Collecting to List ---");
         double[] prices = {9.99, 15.50, 22.30};
         
-        List<Double> priceList = Arrays.stream(prices)
-                                     .boxed()  // Convert DoubleStream to Stream<Double>
-                                     .collect(Collectors.toList());
+//        List<Double> priceList = Arrays.stream(prices)
+//                                     .boxed()  // Convert DoubleStream to Stream<Double>
+//                                     .collect(Collectors.toList());
+                              Stream<Double> boxed = Arrays.stream(prices).boxed();
+                              boxed.forEach(c->System.out.println("Amit"+c));
         
-        System.out.println("Price List: " + priceList);
+      //  System.out.println("Price List: " + priceList);
         
         
         // Example 3: Using with findFirst()

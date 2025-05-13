@@ -1,6 +1,7 @@
 package Java_8;
 
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
@@ -8,11 +9,12 @@ public class CharacterFreq {
     public static void main(String[] args) {
         String str = "programming";
 
-        Map<Character, Long> frequencyMap = str.chars()
-                .mapToObj(c -> (char) c)
-                .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
-
-        System.out.println("Character Frequency: " + frequencyMap);
+      Map<Character, Long> map= str.chars().mapToObj(c->(char)c).collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
+      for(Entry<Character, Long> i: map.entrySet()) {
+    	  System.out.println(i.getKey()+" -> "+i.getValue());
+    	  
+    	  
+      }
     }
 }
 
