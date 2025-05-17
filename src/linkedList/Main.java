@@ -40,5 +40,11 @@ public class Main {
          current = current.next;
      }
      System.out.println("null");
+     
+     System.out.println(head.val+" head: " + head);
+     System.out.println(head.next.val+" head.next: " + head.next);
+     System.out.println(head.next.next.val+" head.next.next: " + head.next.next);
+     System.out.println(head.next.next.next.val+" head.next.next.next: " + head.next.next.next);
+     
  }
 }
