@@ -2,8 +2,6 @@ package abstracT;
 
 import java.util.*;
 import java.util.Map.Entry;
-
-import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
@@ -28,6 +26,11 @@ public class DailyQuestions {
 	       
 		
 		System.out.println(replace);
+		
+		
+		int arr[]= {1,2,3,4,5};
+		Optional<Integer> collect2 = Arrays.stream(arr).boxed().distinct().sorted(Comparator.reverseOrder()).skip(2).findAny();
+		System.out.println(collect2.get());
 
 	}
 
