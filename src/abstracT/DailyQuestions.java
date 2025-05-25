@@ -20,8 +20,7 @@ public class DailyQuestions {
 		System.out.println(i.getKey()+"->"+i.getValue());
 		
 	}
-		
-		
+			
 		int arr[]= {1,2,3,4,5};
 	Optional<Integer> secondhighest=	Arrays.stream(arr).boxed().distinct().sorted(Comparator.reverseOrder()).skip(1).findFirst();
 	
