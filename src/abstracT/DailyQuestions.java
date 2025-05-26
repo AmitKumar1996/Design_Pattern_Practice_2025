@@ -9,23 +9,38 @@ public class DailyQuestions {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+//		Given a string, find the length of the longest substring without repeating characters.
+//
+//		Example:
+//
+      	String str = "abcabcbb";
+//
+//		Answer : Length : 3 Substring : abc and bca and cab
+      	
+      	
+      	
+      	int counter=0;
+      	
 		
-		String str="amit kumar";
-		 str = str.replace(" ", "");
 		
-	Map<Character, Long>frequecncyMap=str.chars().mapToObj(c->(char)c).collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
-	
-	for(Map.Entry<Character, Long> i: frequecncyMap.entrySet()) {
-
-		System.out.println(i.getKey()+"->"+i.getValue());
-		
-	}
+		for(int i=0;i<str.length();i++) {
 			
-		int arr[]= {1,2,3,4,5};
-	Optional<Integer> secondhighest=	Arrays.stream(arr).boxed().distinct().sorted(Comparator.reverseOrder()).skip(1).findFirst();
-	
-	System.err.println(secondhighest.get());
+			for(int j=0;j<str.length()-1;j++) {
+				
+				
+				if(str.charAt(j)==str.charAt(j+1)) {
+					counter++;
+					
+				}
+				else {
+					break;	
+				}
+			}
+			
+		}
 		
+		System.out.println(counter);
+	
 
 	}
 
