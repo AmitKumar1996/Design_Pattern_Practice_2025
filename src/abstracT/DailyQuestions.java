@@ -5,6 +5,9 @@ import java.util.Map.Entry;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
+import Java_8.ReverseArray;
+
+
 public class DailyQuestions {
 
 	public static void main(String[] args) {
@@ -40,6 +43,22 @@ public class DailyQuestions {
 		}
 		
 		System.out.println(counter);
+		
+		int product=1;
+		int[] A= {1,2,3,-1,6,3,6};
+		
+//		for(int i=0;i<A.length;i++) {
+//			
+//		for(int j=i;j<A.length;j++) {
+//			
+//			
+//		}
+//			
+//		}
+		
+		
+		Optional<Integer> first = Arrays.stream(A).boxed().distinct().sorted(Comparator.reverseOrder()).skip(1).findFirst();
+		System.out.println(first.get());
 	
 
 	}
