@@ -36,10 +36,10 @@ public class RotateArray {
 		}
 		
 		for(Integer i: ans) {
-			System.out.println(i+" ");
+			System.out.print(i+" ");
 		}
 		
-		
+		System.out.println("\n\n K=> "+k);
 
 	}
 
