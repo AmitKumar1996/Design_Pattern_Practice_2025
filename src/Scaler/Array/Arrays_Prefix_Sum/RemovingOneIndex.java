@@ -34,7 +34,7 @@ package Scaler.Array.Arrays_Prefix_Sum;
  * Removing any index results in [1, 1] => sum of even and odd indexed values = 1 each
  */
 
-public class RenovingOneIndex {
+public class RemovingOneIndex {
     public int solve(int[] A) {
         int n = A.length;
 
@@ -74,7 +74,7 @@ public class RenovingOneIndex {
         return count;
     }
     public static void main(String[] args) {
-    	RenovingOneIndex sol = new RenovingOneIndex();
+    	RemovingOneIndex sol = new RemovingOneIndex();
 
         // Test Cases
         System.out.println("Running Test Cases...");
