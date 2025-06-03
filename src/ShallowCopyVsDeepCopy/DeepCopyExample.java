@@ -1,4 +1,4 @@
-package DeepCopyVsShallowCopy;
+package ShallowCopyVsDeepCopy;
 
 
 class DeepAddress implements Cloneable {
