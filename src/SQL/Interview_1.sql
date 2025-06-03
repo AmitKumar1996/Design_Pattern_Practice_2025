@@ -67,3 +67,12 @@ WHERE s.Salary >= (
     JOIN Salary s2 ON e2.Eid = s2.Eid
     WHERE e2.Fname = 'Rita'
 );
+
+
+🔹Second Highest Salary:-
+
+SELECT * FROM Employee
+ORDER BY salary DESC
+LIMIT 1 OFFSET 1;
+
+
