@@ -32,13 +32,54 @@ Complexity Analysis:
 Time Complexity: O(N), where N is the number of edges (entries in whParentId/whChildId). Each edge is processed once during graph construction and once during BFS traversal.
 
 Space Complexity: O(N), for storing the graph and the BFS queue.
- 
+
+
+         0
+         |
+         1
+       /   \
+      2     3  <-- closedWID
+           / \
+          4   5
+               \
+                7
+                 \
+                  8
+                  
+                  
+      🔥 If Warehouse 3 is closed:
+All its descendants are affected:
+
+Children: 4, 5
+
+Grandchildren: 7
+
+Great-grandchildren: 8
+
+✅ Final Affected Warehouses: [4, 5, 7, 8]
+                  
+                  
+                  Start from [4, 5]
+→ Visit 4 → No children
+→ Visit 5 → Has child 7 → Add 7 to queue
+→ Visit 7 → Has child 8 → Add 8 to queue
+→ Visit 8 → No children
+→ Queue empty → Done
+
+
  
  
  * */
 
 public class AffectedWarehouses {
     public static List<Integer> findAffectedWarehouses(int[] whParentId, int[] whChildId, int closedWID) {
+    	
+    	
+    	/*
+    	 ✅ Purpose of This Code
+         This code builds a graph (specifically, an adjacency list) from the input arrays: 
+    	 
+    	 * */
         Map<Integer, List<Integer>> graph = new HashMap<>();
         int n = whParentId.length;
         for (int i = 0; i < n; i++) {
@@ -47,10 +88,30 @@ public class AffectedWarehouses {
             graph.computeIfAbsent(parent, k -> new ArrayList<>()).add(child);
         }
         
+        /*
+ graph = {
+    0: [1],
+    3: [4, 5],
+    1: [2, 3],
+    5: [7],
+    7: [8]
+}
+
+        
+         * */
+        
+        
+        
+   //     🧠 What This Does:
+   //     	✅ List<Integer> affected = new ArrayList<>();
+   //    	Initializes an empty list to store affected warehouses.
+
+   //    	We'll add all warehouses that are descendants of the closedWID here.
+        
         List<Integer> affected = new ArrayList<>();
-        if (!graph.containsKey(closedWID)) {
-            return affected;
-        }
+//        if (!graph.containsKey(closedWID)) {
+//            return affected;
+//        }
         
         Queue<Integer> queue = new LinkedList<>(graph.get(closedWID));
         while (!queue.isEmpty()) {
