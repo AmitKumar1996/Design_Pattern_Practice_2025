@@ -26,7 +26,7 @@ public class InputOutput {
         String s1 = "hello";
         String s2 = "hello";
         System.out.println("s1 == s2: " + (s1 == s2)); // true → same reference from string pool
-        System.out.println("s1.equals(s2): " + s1.equals(s2)); // true → same content
+        System.out.println("s1.equals(s2): " + s1.equals(s2)); // true → same content and same type 
 
         // 🔹 Q2: What happens when you use `new String()`?
         String s3 = new String("hello");
@@ -62,6 +62,14 @@ public class InputOutput {
         String s9 = "Hello";
         System.out.println("s1.equals(s9): " + s1.equals(s9)); // false
         System.out.println("s1.equalsIgnoreCase(s9): " + s1.equalsIgnoreCase(s9)); // true
+        
+        StringBuffer sb1=new StringBuffer("hello");
+        System.out.println("s1.equals(sb1)"+s1.equals(sb1.toString())); // because s1 is string and sb1 is object both have same value 
+        System.out.println(sb1.toString());
+        
+        StringBuffer sbf1=new StringBuffer("hello");
+        System.out.println("sb1.equals(sbf1)"+sb1.equals(sbf1));
+        
     }
 
 

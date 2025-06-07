@@ -1,5 +1,6 @@
 package Java_8;
 
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.function.Function;
@@ -9,7 +10,7 @@ public class CharacterFreq {
     public static void main(String[] args) {
         String str = "programming";
 
-      Map<Character, Long> map= str.chars().mapToObj(c->(char)c).collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
+      Map<Character, Long> map= str.chars().mapToObj(c->(char)c).collect(Collectors.groupingBy(Function.identity(),    LinkedHashMap :: new , Collectors.counting()));
       for(Entry<Character, Long> i: map.entrySet()) {
     	  System.out.println(i.getKey()+" -> "+i.getValue());
     	  

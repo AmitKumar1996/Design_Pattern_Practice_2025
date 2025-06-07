@@ -1,4 +1,5 @@
 package Java_8;
+import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.OptionalInt;
@@ -17,6 +18,8 @@ System.out.println("------------------------------------------------------------
    
         
        Long count= Arrays.stream(numbers).filter(n->n%2!=0).count();
+       
+              Arrays.stream(numbers).boxed().distinct().sorted(Comparator.reverseOrder()).limit(1).findFirst();
        
        System.out.println(count);
        
