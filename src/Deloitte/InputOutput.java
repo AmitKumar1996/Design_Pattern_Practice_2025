@@ -11,7 +11,7 @@ public class InputOutput {
     public static void sumExample() {
         int a = 5;
         int b = 10;
-        System.out.println("Sum: " + a+b);  // Output: Sum: 15
+        System.out.println("Sum: " + a+b);  // Output: Sum:510
     }
 
     // ✅ 2. String Interning Example
