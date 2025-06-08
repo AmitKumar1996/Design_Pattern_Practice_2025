@@ -1,15 +1,22 @@
 package abstracT;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.Optional;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 public class Interview {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		String str="aaaabbbbbccccdeeefhiijklm";
+		String str="aaaabbbbbcccczzxxdeeefhiijklm";
 		
 		String temp="";
 		
@@ -35,20 +42,31 @@ public class Interview {
 		
 		
 		
-		int[] array= {-5, -4, -3, -2, -1,0,1,2,3,4,5};
+		Map<Character, Long> collect = str.chars().mapToObj(c->(char)c).collect(Collectors.groupingBy(Function.identity(), LinkedHashMap::new ,Collectors.counting()));
+		
+		System.out.println(collect);
+		
+		
+		
+		int[] array= {-5, -4, -3, -2, -1,0,1,2,3,4,5,7};
+		
+		
+		
+		Optional<Integer> first = Arrays.stream(array).boxed().distinct().sorted(Comparator.reverseOrder()).limit(2).skip(1).findFirst();
+		System.out.println(first.get());
 		
 		//    2 4
 		
 		
-		ArrayList<Integer> Alist=new ArrayList<>();
-		for(int i=0;i<array.length;i++) {
-			Alist.add(array[i]);
-		}
+//		ArrayList<Integer> Alist=new ArrayList<>();
+//		for(int i=0;i<array.length;i++) {
+//			Alist.add(array[i]);
+//		}
 		
 		
-	ArrayList<Integer>  ans= (List<Integer>) Alist.stream().filter(i->i>0 && i%2==0);
-	
-	System.out.println(ans);
+//	ArrayList<Integer>  ans= (List<Integer>) Alist.stream().filter(i->i>0 && i%2==0);
+//	
+//	System.out.println(ans);
 		
 //		ArrayList<String > list=new ArrayList<>();
 //		
