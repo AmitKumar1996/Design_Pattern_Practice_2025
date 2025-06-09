@@ -3,17 +3,30 @@ package abstracT;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.function.Function;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 public class interview1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		String str="swiss chocolate";
+		String str="swiss chocolrrate";
 		
 		char[] array=str.toCharArray();
 		
 		HashMap<Character, Integer> hm=new HashMap<>();
+		
+	     LinkedHashMap<Character, Long> Map = str.chars().mapToObj(c->(char)c).collect(Collectors.groupingBy(Function.identity(),LinkedHashMap::new , Collectors.counting()));
+	     
+	     System.out.println("LinkedHashMap"+Map);
+	     
+	     
+	     
+	    
+	     
 		
 		for(int i=0;i<array.length;i++) {
 			if(hm.containsKey(array[i])) {

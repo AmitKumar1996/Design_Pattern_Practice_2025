@@ -37,7 +37,7 @@ public class interview11 {
 		System.out.println(collect);
 		
 		
-		list.
+		
 		
 		
 	}
