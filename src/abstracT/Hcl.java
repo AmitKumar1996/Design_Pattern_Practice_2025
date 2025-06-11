@@ -1,16 +1,35 @@
 package abstracT;
 
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Optional;
 import java.util.function.Function;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Hcl {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	
+		    
+		        List<String> strings = Arrays.asList("apple", "banana", "cherry", "date", "grapefruit", "orange");
 
+		        Optional<String> longest = strings.stream()
+		            .max(Comparator.comparingInt(String::length));
+		        
+		        
+		        
+		        System.out.println(longest.get());
+
+
+		
+
+		
+		
 
 String s="earth@heart";
 
