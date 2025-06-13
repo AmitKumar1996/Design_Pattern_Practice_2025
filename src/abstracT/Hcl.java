@@ -9,6 +9,7 @@ import java.util.Map.Entry;
 import java.util.Optional;
 import java.util.function.Function;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class Hcl {
@@ -24,6 +25,26 @@ public class Hcl {
 		        
 		        
 		        System.out.println(longest.get());
+		        
+		        List<String> list = Arrays.asList("A", "B", "C", "B", "A");
+		        long count = list.stream().count(); // Total count
+
+		        long countA = list.stream().filter(i -> i.equals("A")).count(); // count of "A"
+		        
+		        
+		        List<Integer> list12 = Arrays.asList(1, 2, 3, 4);
+		        List<Integer> result = IntStream.range(0, list12.size())
+		            .mapToObj(i -> list12.get(i) * i)
+		            .collect(Collectors.toList());
+
+		        System.out.println(result); // Output: [0, 2, 6, 12]
+
+		        
+		        List<Employee> sortedEmployee = EmpList.stream()
+		        	    .collect(Collectors.Compare(String::name))
+		        	    .filter(i -> i.getAge() > 30);
+
+
 
 
 		
