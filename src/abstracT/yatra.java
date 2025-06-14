@@ -56,20 +56,20 @@ public class yatra {
 			System.out.print(i);
 			
 		}	
-		for(int i=A.length;i<=0;i--) {
-			
-		if((A[i]!='a' ) ||(A[i]!='e') || (A[i]!='i') || (A[i]!='o') || (A[i]!='u') ){
-			ans+=A[i];
-			
-		}
-		else {
-			
-		}
-			
-			
-			
-			
-		}
+//		for(int i=A.length;i<=0;i--) {
+//			
+//		if((A[i]!='a' ) ||(A[i]!='e') || (A[i]!='i') || (A[i]!='o') || (A[i]!='u') ){
+//			ans+=A[i];
+//			
+//		}
+//		else {
+//			
+//		}
+//			
+//			
+//			
+//			
+//		}
 
 	}
 
