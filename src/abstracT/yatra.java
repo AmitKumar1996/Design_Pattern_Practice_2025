@@ -19,13 +19,14 @@ public class yatra {
 		
 		
 		char[] A=str.toCharArray();
-//		for(Character i: A) {
-//			System.out.print(i);
-//			
-//		}
+		for(Character i: A) {
+			System.out.print(i);
+			
+		}
+		
+		System.out.println();
 		
 		
-		String ans="";
 		
 		int start=0;
 		int end=str.length()-1;
