@@ -17,6 +17,10 @@ public class BoxedExamples {
         boxedStream.forEach(num -> System.out.println("Number: " + num));
         
         
+        Optional<Integer> first1 = Arrays.stream(primitiveNumbers).boxed().distinct().sorted(Comparator.reverseOrder()).skip(1).limit(1).findFirst();  
+        
+        System.out.println(first1.orElse(-1));
+        
         // Example 2: Collecting to List
         System.out.println("\n--- Example 2: Collecting to List ---");
         double[] prices = {9.99, 15.50, 22.30};
