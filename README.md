@@ -21,3 +21,11 @@
 - Hirect
 - LinkedIn
 
+---
+
+## 📚 Project Resources
+
+- [Udacity](https://www.udacity.com/)
+- [CodeCrafters](https://codecrafters.io/)
+- [Kaggle](https://www.kaggle.com/)
+
