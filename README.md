@@ -28,4 +28,5 @@
 - [Udacity](https://www.udacity.com/)
 - [CodeCrafters](https://codecrafters.io/)
 - [Kaggle](https://www.kaggle.com/)
+- [DSA](https://blog.algomaster.io/p/15-leetcode-patterns)
 
