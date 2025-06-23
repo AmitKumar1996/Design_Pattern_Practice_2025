@@ -1,5 +1,9 @@
 package string;
 
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
 public class divideString {
 	
 	 public static String[] divideString1(String s, int k, char fill) {
@@ -16,6 +20,11 @@ public class divideString {
 	            res[i] = sb.substring(i * k, (i + 1) * k);
 	        }
 
+	        List<String> list = Arrays.asList("apple", "orange", "berry","kiwi","berry", "blueberry");
+                         
+            List<Boolean> newList=list.stream().map(i->i.toUpperCase()).map(i-> i.startsWith("B")).collect(Collectors.toList());
+            
+            System.out.println(newList);
 	        
 	        return res;
 	    }
