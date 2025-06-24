@@ -25,5 +25,14 @@ public class CharacterFrequency {
          Map<Character, Long> collect2 = s.chars().mapToObj(c->(char)c).collect(Collectors.groupingBy(c->c, Collectors.counting()));
          
          System.out.println(collect2);
+         
+         List<String> list1 = Arrays.asList("apple", "orange", "berry","kiwi","berry", "blueberry");
+         
+	        List<String> newList1 = list1.stream()
+	                .map(str -> str.toUpperCase())           // Convert to uppercase
+	                .filter(i -> i.startsWith("B"))     // Filter strings that start with "B"
+	                .collect(Collectors.toList());      // Collect to a list            
+         System.out.println("2--->"+newList1);
+
     }
 }
