@@ -22,9 +22,19 @@ public class divideString {
 
 	        List<String> list = Arrays.asList("apple", "orange", "berry","kiwi","berry", "blueberry");
                          
-            List<Boolean> newList=list.stream().map(i->i.toUpperCase()).map(i-> i.startsWith("B")).collect(Collectors.toList());
+	        List<String> newList = list.stream()
+	                .map(String::toUpperCase)           // Convert to uppercase
+	                .filter(i -> i.startsWith("B"))     // Filter strings that start with "B"
+	                .collect(Collectors.toList());      // Collect to a list            
+            System.out.println("--->"+newList);
             
-            System.out.println(newList);
+            List<String> list1 = Arrays.asList("apple", "orange", "berry","kiwi","berry", "blueberry");
+            
+	        List<String> newList1 = list1.stream()
+	                .map(str -> str.toUpperCase())           // Convert to uppercase
+	                .filter(i -> i.startsWith("B"))     // Filter strings that start with "B"
+	                .collect(Collectors.toList());      // Collect to a list            
+            System.out.println("2--->"+newList1);
 	        
 	        return res;
 	    }
