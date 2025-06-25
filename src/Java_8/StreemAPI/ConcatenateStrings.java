@@ -35,5 +35,12 @@ public class ConcatenateStrings {
 	                .filter(i -> i.startsWith("B"))     // Filter strings that start with "B"
 	                .collect(Collectors.toList());      // Collect to a list            
       System.out.println("2--->"+newList1);
+      
+      
+      
+      
+      
+      
+      
     }
 }
