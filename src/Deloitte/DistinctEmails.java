@@ -30,6 +30,7 @@ public class DistinctEmails {
         List<User> userList = Arrays.asList(
             new User("A@gmail.com", "B@gmail.com"),
             new User("C@gmail.com", "D@gmail.com"),
+            new User("A@gmail.com", "D@gmail.com"),
             new User("A@gmail.com", "D@gmail.com")
         );
 
