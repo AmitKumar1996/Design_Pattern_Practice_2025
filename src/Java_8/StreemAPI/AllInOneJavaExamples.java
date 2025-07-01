@@ -28,6 +28,10 @@ public class AllInOneJavaExamples {
         List<Integer> evenList = numbers.stream()
             .filter(i -> i % 2 == 0)
             .collect(Collectors.toList());
+        
+        
+        
+        
 
         List<Integer> oddList = numbers.stream()
             .filter(i -> i % 2 != 0)
