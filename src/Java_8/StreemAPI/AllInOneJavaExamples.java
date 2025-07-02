@@ -27,6 +27,8 @@ public class AllInOneJavaExamples {
         
         List<Integer> collect = numbers.stream().filter(i->i%2==0).collect(Collectors.toList());
         System.out.println("collect "+collect);
+         List<Integer> collect2 = numbers.stream().filter(i->i%2!=0).collect(Collectors.toList());
+         System.out.println(collect2);
 
         List<Integer> evenList = numbers.stream()
             .filter(i -> i % 2 == 0)
