@@ -26,9 +26,14 @@ public class AllInOneJavaExamples {
         List<Integer> numbers = Arrays.asList(1, 4, 5, 6, 7, 8, 11);
         
         List<Integer> collect = numbers.stream().filter(i->i%2==0).collect(Collectors.toList());
+        
         System.out.println("collect "+collect);
          List<Integer> collect2 = numbers.stream().filter(i->i%2!=0).collect(Collectors.toList());
          System.out.println(collect2);
+         
+         Map<Boolean, List<Integer>> partitioned = numbers.stream()
+        	        .collect(Collectors.partitioningBy(i -> i % 2 == 0));
+
 
         List<Integer> evenList = numbers.stream()
             .filter(i -> i % 2 == 0)
