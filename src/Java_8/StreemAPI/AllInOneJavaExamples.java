@@ -39,6 +39,9 @@ public class AllInOneJavaExamples {
             .filter(i -> i % 2 == 0)
             .collect(Collectors.toList());
         
+
+      Set<Integer> collect3 = numbers.stream().filter(i->i%2==0).collect(Collectors.toSet());
+      System.out.println(collect3);
         
         
         
