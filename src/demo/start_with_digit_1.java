@@ -114,6 +114,11 @@ public class start_with_digit_1 {
         String sentence = "Java is a powerful language";
         long wordCount = Arrays.stream(sentence.split(" ")).count();
         System.out.println("1️⃣4️⃣ Word count: " + wordCount);
+        
+        // 1️⃣4️⃣ Count words in a sentence
+        String sentence1 = "Java is a powerful language";
+        long wordCount1 = Arrays.stream(sentence1.split(" ")).count();
+        System.out.println("1️⃣4️⃣ Word count: " + wordCount1);
 
         // 1️⃣5️⃣ Group words by length
         List<String> words = Arrays.asList("Java", "is", "awesome", "and", "fun");
