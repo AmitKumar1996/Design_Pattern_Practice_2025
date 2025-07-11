@@ -7,11 +7,14 @@ public class CreateDao_01_11 {
 	
 	private static CreateDao_01_11 createDao_01_11=null;
 	
-	private static CreateDao_01_11 getInstance() {
-		
-		if(createDao_01_11  == null) {
-			createDao_01_11 = new CreateDao_01_11();
+	private static  CreateDao_01_11 getInstance() {
+		synchronized (createDao_01_11) {
+			if(createDao_01_11  == null) {
+				createDao_01_11 = new CreateDao_01_11();
+			}
+			
 		}
+		
 		return createDao_01_11;
 		
 	}
