@@ -7,12 +7,17 @@ public class ContactDao_01_08 {
 	private static ContactDao_01_08 contactDao = null;
 
 	public static ContactDao_01_08 getInstance() {
+		
+		synchronized(contactDao) {
+			if (contactDao == null) {
 
-		if (contactDao == null) {
-
-			contactDao = new ContactDao_01_08();
+				contactDao = new ContactDao_01_08();
+			}
+			return contactDao;
+			
 		}
-		return contactDao;
+
+		
 
 	}
 
