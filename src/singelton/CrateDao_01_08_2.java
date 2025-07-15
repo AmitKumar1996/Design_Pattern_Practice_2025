@@ -5,11 +5,15 @@ public class CrateDao_01_08_2 {
 	private static CrateDao_01_08_2 crateDao_01_08_2;
 
 	private static CrateDao_01_08_2 getInstance() {
-		if (crateDao_01_08_2 == null) {
+		synchronized (crateDao_01_08_2) {
+			if (crateDao_01_08_2 == null) {
 
-			crateDao_01_08_2 = new CrateDao_01_08_2();
+				crateDao_01_08_2 = new CrateDao_01_08_2();
+			}
+			return crateDao_01_08_2;
+			
 		}
-		return crateDao_01_08_2;
+		
 	}
 
 	public static void main(String[] args) {
