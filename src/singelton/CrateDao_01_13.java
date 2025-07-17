@@ -4,16 +4,13 @@ public class CrateDao_01_13 {
 	
 	private static CrateDao_01_13 crateDao_01_13=null;
 	
-	private static CrateDao_01_13 getInstance() {
+	private static synchronized CrateDao_01_13 getInstance() {
 		
-		synchronized (crateDao_01_13) {
-			if(crateDao_01_13 == null) {
-				  crateDao_01_13= new  CrateDao_01_13();
-					
-				}
-				return crateDao_01_13;
-		}
-		
+		if(crateDao_01_13 == null) {
+			  crateDao_01_13= new  CrateDao_01_13();
+				
+			}
+			return crateDao_01_13;
 	}
 	
 	
