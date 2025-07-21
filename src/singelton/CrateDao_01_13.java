@@ -21,15 +21,7 @@ public class CrateDao_01_13 {
 			
 		}
 		
-		synchronized (crateDao_01_13) {
-			
-			if(crateDao_01_13 == null) {
-				  crateDao_01_13= new  CrateDao_01_13();
-					
-				}
-				return crateDao_01_13;
-			
-		}
+	
 		
 	}
 	
