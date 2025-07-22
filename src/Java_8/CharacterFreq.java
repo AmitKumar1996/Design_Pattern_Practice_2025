@@ -13,6 +13,11 @@ public class CharacterFreq {
       Map<Character, Long> map= str.chars().mapToObj(c->(char)c).collect(Collectors.groupingBy(Function.identity(),    LinkedHashMap :: new , Collectors.counting()));
       for(Entry<Character, Long> i: map.entrySet()) {
     	  System.out.println(i.getKey()+" -> "+i.getValue());
+    	Map<Character, Long> map1=  str.chars().mapToObj(c->(char)c).collect(Collectors.groupingBy(Function.identity(), LinkedHashMap :: new , Collectors.counting()));
+    	  
+    	  
+    	  
+    	  
     	  
     	  
       }
