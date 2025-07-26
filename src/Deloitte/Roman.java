@@ -50,7 +50,7 @@ public class Roman {
 		
 		Roman obj= new Roman();
 	int ans=	obj.romInt(s);
-	System.out.println(ans);
+	System.out.println(ans); // 2
 			
 		
 	}
