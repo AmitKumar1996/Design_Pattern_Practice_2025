@@ -9,6 +9,20 @@ public class GoodPair {
 	
 	public boolean TargetExits(int Array[], int target) {
 		
+		
+		HashMap<Integer, Integer> map=new HashMap<Integer, Integer>();
+	
+		for(int i=0; i< Array.length;i++) {
+			if(map.containsKey(target-Array[i])) {
+             System.out.println(Array[i]+"->"+i);
+             System.out.println(target-Array[i]+"->"+map.get(target-Array[i]));
+				return true;
+			}
+			else {
+				map.put(Array[i], i);
+			}
+		}
+		
 		HashSet<Integer> set=new HashSet<Integer>();
 		
 		for(Integer i:Array) {

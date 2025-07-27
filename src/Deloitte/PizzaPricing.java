@@ -69,6 +69,9 @@ public class PizzaPricing {
         List<String> toppings = Arrays.asList("cheese", "pepperoni", "olives");
         Pizza pizza = new Pizza("regular", "large", toppings);
 
+        int[] A= {1,2,3,4,56,7};
+        System.out.println(A.length);
+        
         double basePrice = calculatePrice(pizza);
         System.out.println("Price without discount: $" + basePrice);
 
