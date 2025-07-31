@@ -32,8 +32,13 @@ public class EmployeeBonusApp {
         // Step 3: Print results
         System.out.println("Junior-most employees with 10% bonus applied:");
         updatedEmployees.forEach(System.out::println);
+        
+        
+        System.out.println(employees.toString());
     }
 
+    
+    
     // Employee class
     static class Employee {
         private int id;
