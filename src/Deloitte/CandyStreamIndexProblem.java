@@ -52,6 +52,8 @@ public class CandyStreamIndexProblem {
 
         // 🔸 Problem 2: Stream Filter
         List<Integer> list = Arrays.asList(1, 2, 2, 3, 4, 5);
+        List<Integer> collect = list.stream().filter(i->i%2==0).collect(Collectors.toList());
+        System.out.println(collect);
         List<Integer> evenList = filterEven(list);
         System.out.println("Even numbers: " + evenList); // Output: [2, 2, 4]
 
