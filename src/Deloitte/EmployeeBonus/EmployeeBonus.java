@@ -10,13 +10,16 @@ public class EmployeeBonus {
 public static void main(String[] args) {
 	
 	List<Employee> employes = Arrays.asList(
-			new Employee(1, "Amit", "JAVA", LocalDate.of(2025, 07, 1),500000)
+			new Employee(1, "Amit", "JAVA", LocalDate.of(2025, 7, 1), 50000),
+			new Employee(2, "Sumit", "C++", LocalDate.of(2025, 3, 6), 10000),
+			new Employee(3, "Namit", "C", LocalDate.of(2025, 8, 3), 10020)
+			
 			
 			);
 }
 	
 	
-	class Employee{
+ static	class Employee{
 		
 		private long id;
 		private String name;
