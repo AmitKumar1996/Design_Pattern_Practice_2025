@@ -13,6 +13,7 @@ public class EmployeeBonus {
             new Employee(1, "Amit", "JAVA", LocalDate.of(2025, 7, 1), 50000),
             new Employee(2, "Sumit", "C++", LocalDate.of(2025, 3, 6), 10000),
             new Employee(3, "Namit", "C", LocalDate.of(2025, 8, 3), 10020),
+            new Employee(4, "Namit", "C", LocalDate.of(2025, 8, 3), 10000),
             new Employee(4, "Namit", "C", LocalDate.of(2025, 8, 3), 10000)
         );
     }
