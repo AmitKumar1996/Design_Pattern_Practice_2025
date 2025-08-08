@@ -42,7 +42,9 @@ public class DiscountExample {
                 new Item(103, "Book", "Education", 500),
                 new Item(104, "Laptop", "Electronics", 90000),
                 new Item(105, "Jeans", "Clothing", 1800),
+                new Item(106, "Furniture", "Home", 15000),
                 new Item(106, "Furniture", "Home", 15000)
+                
         );
 
         // Discount map: category → discount %
