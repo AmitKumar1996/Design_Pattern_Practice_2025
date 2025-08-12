@@ -46,6 +46,7 @@ public class DiscountExample {
                 new Item(106, "Furniture", "Home", 15000),
                 new Item(106, "Furniture", "Home", 15000),
                 new Item(106, "Furniture", "Home", 15000),
+                new Item(106, "Furniture", "Home", 15000),
                 new Item(106, "Furniture", "Home", 15000)
                 
         );
