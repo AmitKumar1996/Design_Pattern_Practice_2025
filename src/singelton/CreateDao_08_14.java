@@ -6,10 +6,12 @@ public class CreateDao_08_14 {
 	
 	public static synchronized CreateDao_08_14 getInstance() {
 		
+		synchronized(createDao_08_14) {
 		if(createDao_08_14 == null) {
+			
 			 createDao_08_14= new CreateDao_08_14();
 			
-		}
+		}}
 	    return  createDao_08_14;
 		
 	}
