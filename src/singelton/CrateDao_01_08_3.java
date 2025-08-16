@@ -6,11 +6,14 @@ public class CrateDao_01_08_3 {
 
 	private static CrateDao_01_08_3 getInstance() {
 
+	
+		
+		synchronized(crateDao_01_08_3){
 		if (crateDao_01_08_3 == null) {
 			crateDao_01_08_3 = new CrateDao_01_08_3();
 		}
 		return crateDao_01_08_3;
-	}
+	}}
 
 	public static void main(String[] args) {
 
