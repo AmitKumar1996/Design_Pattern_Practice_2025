@@ -5,12 +5,12 @@ public class Create_Dao_19_08 {
 	private static Create_Dao_19_08 create_Dao_19_08=null;
 	
 	private static Create_Dao_19_08 getInstance() {
-		synchronized (create_Dao_19_08) {
+		
 			if(create_Dao_19_08 == null) {
 				create_Dao_19_08 = new Create_Dao_19_08();
 			}
 			
-		}
+		
 		
 		return create_Dao_19_08;
 	}
