@@ -12,17 +12,17 @@ public class LibkedLIST {
 //		Input = {1,1,3,3,2,2,5,7,7}
 //		Output = 5
 		
-		int A[]={1,1,3,3,2,2,5,7,7};
-		
-		int ans=A[0];
-		
-		for(int i=1;i<A.length;i++) {
-			
-			ans ^=A[i];
-			
-		}
-		System.out.println(ans);
-		
+//		int A[]={1,1,3,3,2,2,5,7,7};
+//		
+//		int ans=A[0];
+//		
+//		for(int i=1;i<A.length;i++) {
+//			
+//			ans ^=A[i];
+//			
+//		}
+//		System.out.println(ans);
+//		
 		
 		
 		
