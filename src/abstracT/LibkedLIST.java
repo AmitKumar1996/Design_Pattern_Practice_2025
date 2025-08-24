@@ -18,11 +18,13 @@ public class LibkedLIST {
         }
         System.out.println("Unique element: " + ans);
     }
+    
+    
 
     // ---------------- Problem 2 ----------------
     // Merge two sorted linked lists into one sorted list.
     // Input: list1 = [1,2,4], list2 = [1,3,4]
-    // Output: [1,1,2,3,4,4]
+    // Output:- [1,1,2,3,4,4]
     static class Node {
         int val;
         Node next;
