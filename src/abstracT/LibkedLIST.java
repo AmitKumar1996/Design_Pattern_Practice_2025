@@ -14,14 +14,14 @@ public class LibkedLIST {
         int ans = A[0];
 
         for (int i = 1; i < A.length; i++) {
-            ans ^= A[i]; // XOR cancels out duplicates
+            ans ^= A[i];  // XOR cancels out duplicates
         }
         System.out.println("Unique element: " + ans);
     }
     
     
 
-    // ---------------- Problem 2 ----------------
+    // ---------------- Problem 2 ------------------
     // Merge two sorted linked lists into one sorted list.
     // Input: list1 = [1,2,4], list2 = [1,3,4]
     // Output:- [1,1,2,3,4,4]
