@@ -5,7 +5,7 @@ import java.util.LinkedList;
 
 public class LibkedLIST {
 
-    // ---------------- Problem 1 ----------------
+    // ---------------- Problem 1 ------------------
     // Given an array where every element appears twice except one.
     // Find the element that appears only once.
     // Input = {1,1,3,3,2,2,5,7,7} -> Output = 5
