@@ -17,8 +17,7 @@ public class MissingNumbers {
         int min = list.stream().min(Integer::compareTo).get();
         int max = list.stream().max(Integer::compareTo).get();
 
-        List<Integer> missing = IntStream.rangeClosed(min, max)
-                .filter(i -> !list.contains(i))
+        List<Integer> missing = IntStream.rangeClosed(min, max).filter(i -> !list.contains(i))
                 .boxed()
                 .collect(Collectors.toList());
 
