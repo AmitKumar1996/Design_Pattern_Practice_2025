@@ -12,7 +12,7 @@ public class Test {
 	
 	
 	
-////	Function Signature:
+//	Function Signature:
 //		class RateLimiter {
 //		    public RateLimiter(int maxRequests, int windowInSeconds);
 //		    
