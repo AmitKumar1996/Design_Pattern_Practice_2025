@@ -5,6 +5,10 @@ import java.util.*;
 public class Test1 {
 
     public static void main(String[] args) {
+    	
+    	
+    	
+    	
         int[] A = {1, 2, 3};
         List<List<Integer>> powerSet = new ArrayList<>();
 
