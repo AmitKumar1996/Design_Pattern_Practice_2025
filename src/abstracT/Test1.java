@@ -13,7 +13,8 @@ public class Test1 {
         List<List<Integer>> powerSet = new ArrayList<>();
 
         int n = A.length;
-        int total = 1 << n;     // 2^n subsets
+        int total = 1 << n;     // 2^n subsets   [[], [1], [2], [1, 2], [3], [1, 3], [2, 3], [1, 2, 3]]
+
 
         for (int mask = 0; mask < total; mask++) {
             List<Integer> subset = new ArrayList<>();
