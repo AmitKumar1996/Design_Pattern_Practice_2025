@@ -15,7 +15,7 @@ public class Test1 {
         int n = A.length;
         int total = 1 << n;     // 2^n subsets   [[], [1], [2], [1, 2], [3], [1, 3], [2, 3], [1, 2, 3]]
 
-
+   System.out.println(total);
         for (int mask = 0; mask < total; mask++) {
             List<Integer> subset = new ArrayList<>();
             for (int i = 0; i < n; i++) {

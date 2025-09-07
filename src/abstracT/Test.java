@@ -34,7 +34,7 @@ public class Test {
 		list.add("Apple");
 		list.add("Mango");
 		list.add("Banana");
-		a
+		
 	list.stream().sorted((s1,s2)->{ return 
 		-s1.substring(1).compareTo(s2.substring(1));
 				
