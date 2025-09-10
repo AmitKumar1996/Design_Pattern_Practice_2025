@@ -16,8 +16,8 @@ public class DbConnection_2 {
 		// TODO Auto-generated method stub
    
 		DbConnections o1=new DbConnections();
-	//	System.out.println(o1.m1);
-	//o1.m1();
+		System.out.println(o1.m1);
+	o1.m1();
 	
 	}
 
