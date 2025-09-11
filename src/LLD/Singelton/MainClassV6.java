@@ -11,7 +11,7 @@ class DbConnection {
 
     // Step 3: public static method to return instance
     public static MainClassV6 getInstance() {
-        if (ins == null) {
+        if (ins == null) { // race condition ⚠️
             ins = new MainClassV6();
         }
         return ins;
