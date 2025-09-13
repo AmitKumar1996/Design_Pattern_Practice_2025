@@ -21,6 +21,8 @@ public class ReverseStringStream {
 }
 
 
+
+
 /*
  🔎 Explanation:
 input.chars()
@@ -44,4 +46,51 @@ Example: ["H", "i"] → "Hi".
 new StringBuilder(...).reverse().toString()
 
 Wraps the collected string in a StringBuilder, calls .reverse(), and converts it back to a string.
+ */
+
+
+
+/*
+ // Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class Main {
+    public static void main(String[] args) {
+        System.out.println("Try programiz.pro");
+//         Input: "IceCreAm"
+// Output: "AceCreIm"
+// Explanation:
+// The vowels in s are ['I', 'e', 'e', 'A']. On reversing the vowels, s becomes "AceCreIm"
+
+public boolean checkVowel(char c){
+    
+    if(str.charAt(start)=='A' || str.charAt(start)=='a' || str.charAt(start)=='E' || str.charAt(start)=='e' || str.charAt(start)=='I' || str.charAt(start)=='i' || str.charAt(start)=='O' || str.charAt(start)=='o'|| str.charAt(start)=='U' || str.charAt(start)=='u'){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+    
+}
+String str="IceCreAm";
+int start=0;
+int end=s.length()-1;
+char[] A=str.toCharArray();
+while(start<end){
+  if(str.charAt(start)==true && str.charAt(end)==true){
+      char temp=A[start];
+      A[start]=A[end];
+      A[end]=temp;
+      
+  }
+  else if()
+  
+  
+    
+}
+
+    }
+}
+ * */
  */
