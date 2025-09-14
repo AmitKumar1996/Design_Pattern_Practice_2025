@@ -2,7 +2,7 @@ package Java_8.StreemAPI;
 
 import java.util.stream.Collectors;
 
-public class ReverseStringStream {
+public class   ReverseStringStream {
     public static void main(String[] args) {
         String input = "Hello World";
 
