@@ -9,6 +9,7 @@ public class   ReverseStringStream {
         // Step 1: Convert the string into a stream of characters
         // Step 2: Collect them back into a single string
         // Step 3: Use StringBuilder to reverse the collected string
+        
         String reversed = new StringBuilder(
                 input.chars()                                  // IntStream of character codes
                      .mapToObj(c -> String.valueOf((char) c))  // Convert int → char → String
