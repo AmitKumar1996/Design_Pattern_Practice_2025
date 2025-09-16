@@ -10,6 +10,9 @@ public class Interview {
 		// 0 1 2 3 4 5 6 
 		//
 		
+		
+		
+		
 		int[] Array= {0, 1, 2, 3, 4, 5, 6,0,2,3,4,-12,18};
 		
 		int k=6;
