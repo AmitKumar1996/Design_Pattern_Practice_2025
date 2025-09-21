@@ -24,6 +24,15 @@ public class Practice_21_09 {
 		   
 		   System.out.println(number1);
 
+		   
+			
+			String s1="Amit kumar";
+			
+		String ans1=	s1.chars()
+		.mapToObj(c->String.valueOf((char)c))
+	    .collect(Collectors.joining(",","",","))
+	    .replace(", ,"," ");
+		System.out.print(ans1);
 	}
 
 }
