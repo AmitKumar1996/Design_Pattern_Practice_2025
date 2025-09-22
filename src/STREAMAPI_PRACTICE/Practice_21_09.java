@@ -1,5 +1,7 @@
 package STREAMAPI_PRACTICE;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -33,6 +35,9 @@ public class Practice_21_09 {
 	    .collect(Collectors.joining(",","",","))
 	    .replace(", ,"," ");
 		System.out.print(ans1);
+		
+		String[] str= {"Amit","kumar", null};
+		Arrays.stream(str).forEach(i-> !i ==null, System.out::println);
 	}
 
 }
