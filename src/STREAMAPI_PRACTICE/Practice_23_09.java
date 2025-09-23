@@ -32,6 +32,11 @@ int A[]={1,2,3,4,5,6};
 //System.out.println(max1.get());
 
 
+List<Integer> list=Arrays.stream(A).boxed().filter(i->i%2!=0).collect(Collectors.toList());
+
+System.out.println(list);
+
+
 
 
 
