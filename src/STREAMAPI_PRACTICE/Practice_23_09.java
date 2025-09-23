@@ -25,7 +25,7 @@ Integer max=	listmax.stream().sorted(Comparator.reverseOrder()).findFirst().orEl
 
 System.out.println(max);
 
-int A[]={1,2,3,4,5,6};
+int A[]={1,2,3,4,5,6,1};
 
 //Optional<Integer> max1=Arrays.stream(A).boxed().sorted(Comparator.reverseOrder()).findFirst();
 //
@@ -35,6 +35,23 @@ int A[]={1,2,3,4,5,6};
 List<Integer> list=Arrays.stream(A).boxed().filter(i->i%2!=0).collect(Collectors.toList());
 
 System.out.println(list);
+
+
+
+HashSet<Integer> set=new HashSet<Integer>();
+
+
+
+ List<Integer> collect=   Arrays.stream(A).boxed().filter(i-> !set.add(i)).collect(Collectors.toList());
+
+System.out.println(collect);
+
+
+ String s="123456789";
+
+Integer filter = Arrays.stream(A).sum();
+   
+   System.out.println(filter);
 
 
 
