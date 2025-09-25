@@ -47,11 +47,16 @@ HashSet<Integer> set=new HashSet<Integer>();
 System.out.println(collect);
 
 
- String s="123456789";
+
 
 Integer filter = Arrays.stream(A).sum();
    
    System.out.println(filter);
+
+   
+   String s="123456789";
+Integer  s.chars().mapToObj(c-> Integer.valueOf(c)).sum();
+   
 
 
 
