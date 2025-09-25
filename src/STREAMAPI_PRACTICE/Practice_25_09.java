@@ -7,8 +7,7 @@ import java.util.List;
 public class Practice_25_09 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-	System.out.println("Hello World");
+		// TODO Auto-generated method stub	System.out.println("Hello World");
 		
 		List<Integer> list=List.of(1,2,3,4,5,6);
 		int[] A={1,2,3,4,5,6};
@@ -20,7 +19,9 @@ public class Practice_25_09 {
 		
 			System.out.println(max);
 			
-			
+	long count=	Arrays.stream(A).boxed().filter(i->i%2==0).count();
+		
+		System.out.println(count);	
 		
 		
 		
