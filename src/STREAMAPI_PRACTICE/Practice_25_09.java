@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 public class Practice_25_09 {
@@ -59,6 +60,12 @@ public class Practice_25_09 {
 	
 		
 		System.out.println("check:--->"+""+check);
+		
+		Map<Boolean, List<Integer>> partitiningBy=	list.stream().collect(Collectors.partitioningBy(i->i%2==0));
+		
+		
+		
+		System.out.println("partitiningBy:--->"+""+partitiningBy);
 		
 
 	}
