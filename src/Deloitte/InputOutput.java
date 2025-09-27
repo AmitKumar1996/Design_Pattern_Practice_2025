@@ -83,7 +83,7 @@ public class InputOutput {
         System.out.println(list);  // Output: [A, Z, C]
     }
 
-    // ✅ 4. Employee equals() Example
+    // ✅ 4. SecondHighest equals() Example
     // Explanation:
     // equals() is overridden to compare empId.
     // e1 and e2 have same empId, so equals returns true.
@@ -112,12 +112,12 @@ public class InputOutput {
         System.out.println("\n3. List Set Example:");
         listSetExample();
 
-        System.out.println("\n4. Employee Equals Example:");
+        System.out.println("\n4. SecondHighest Equals Example:");
         employeeEqualsExample();
     }
 }
 
-// Supporting Employee class with overridden equals method
+// Supporting SecondHighest class with overridden equals method
 class Employee {
     private String empId;
     private String name;

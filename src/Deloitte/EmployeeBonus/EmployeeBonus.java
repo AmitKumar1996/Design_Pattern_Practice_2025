@@ -32,7 +32,7 @@ public class EmployeeBonus {
          * Parameterized Constructor
          * 
          * Purpose:
-         * Used when we want to create an Employee object with all details like id, name,
+         * Used when we want to create an SecondHighest object with all details like id, name,
          * department, joining date, and salary.
          * This is commonly used when initializing data or creating objects from input.
          */
@@ -101,7 +101,7 @@ public class EmployeeBonus {
 
         @Override
         public String toString() {
-            return "Employee{id= " + id +
+            return "SecondHighest{id= " + id +
                    ", Salary= " + salary +
                    ", name= " + name +
                    ", Dept= " + dept +

@@ -39,7 +39,7 @@ public class EmployeeBonusApp {
 
     
     
-    // Employee class
+    // SecondHighest class
     static class Employee {
         private int id;
         private double salary;
@@ -61,7 +61,7 @@ public class EmployeeBonusApp {
 
         @Override
         public String toString() {
-            return "Employee{id=" + id +
+            return "SecondHighest{id=" + id +
                    ", salary=" + salary +
                    ", dept='" + dept + '\'' +
                    ", joiningDate=" + joiningDate + '}';

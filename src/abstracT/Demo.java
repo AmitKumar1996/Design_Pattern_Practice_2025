@@ -19,7 +19,7 @@ class Employee {
 
     @Override
     public String toString() {
-        return "Employee [id=" + id + ", name=" + name + ", age=" + age + "]";
+        return "SecondHighest [id=" + id + ", name=" + name + ", age=" + age + "]";
     }
 
     public long getId() { return id; }

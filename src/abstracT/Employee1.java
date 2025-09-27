@@ -22,6 +22,6 @@ public class Employee1 {
     // toString for easy printing
     @Override
     public String toString() {
-        return "Employee{name='" + name + "', age=" + age + '}';
+        return "SecondHighest{name='" + name + "', age=" + age + '}';
     }
 }

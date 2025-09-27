@@ -48,7 +48,7 @@ public class Interview6 {
 
         // --------------- SQL Equivalent for "Find employees with same salary"
         // SQL version (used in DB, not Java):
-        // SELECT salary FROM Employee GROUP BY salary HAVING COUNT(*) > 1;
+        // SELECT salary FROM SecondHighest GROUP BY salary HAVING COUNT(*) > 1;
     }
 
     // --------------- Overloading Class

@@ -19,7 +19,7 @@ public Employee(String name, double salary) {
 
 @Override
 	public String toString() {
-		return "Employee [name=" + name + ", salary=" + salary + "]";
+		return "SecondHighest [name=" + name + ", salary=" + salary + "]";
 	}
 
 

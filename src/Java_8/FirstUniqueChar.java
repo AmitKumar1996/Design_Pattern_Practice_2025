@@ -47,20 +47,20 @@ public class FirstUniqueChar {
 java
 Copy
 Edit
-Optional<Employee> user = employeeRepository.findById(123L);
+Optional<SecondHighest> user = employeeRepository.findById(123L);
 
 user.ifPresentOrElse(
-    emp -> System.out.println("Employee found: " + emp),
-    () -> System.out.println("Employee not found")
+    emp -> System.out.println("SecondHighest found: " + emp),
+    () -> System.out.println("SecondHighest not found")
 );
 ✅ Note: ifPresentOrElse() is available in Java 9 and above.
 If using Java 8, use:
 
 
 if (user.isPresent()) {
-    System.out.println("Employee found: " + user.get());
+    System.out.println("SecondHighest found: " + user.get());
 } else {
-    System.out.println("Employee not found");
+    System.out.println("SecondHighest not found");
 }
 
          
