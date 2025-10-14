@@ -33,22 +33,66 @@ public class SecondHighest {
                 new Employee("Eva", "Finance", 70000),
                 new Employee("Michael", "Finance", 75000)
         );
+        
+//        employees.stream().collect(Collectors.groupingBy(Employee :: getDept), Collectors.collectingAndThen(Collectors.toList(), list-> list.stream().sorted(
+//        		
+//        		
+//        		
+//        		Comparator.comparingDouble(Employee:: getSalary).reversed()
+//        		
+//        		
+//        		).skip(1).findFirst()
+//        		
+//        		
+//        		
+//        		
+//        		
+//        		);
+//        
+        
+        
+        
+        Map<String, Optional<Employee>> collect = employees.stream().collect(Collectors.groupingBy(Employee:: getDept,
+        		
+        		
+        		
+        		Collectors.collectingAndThen(Collectors.toList(),list-> list.stream().sorted(Comparator.comparing(Employee:: getSalary)).skip(1).findFirst())
+        		)
+        		
+        		
+        		
+        		
+        		
+        		
+        		);
+        
+        
+        System.out.println(collect);
+        
+//        
+//       collect.forEach((dept, emp) System.out.println(dept+""+emp));
+//        
+        
+        
 
-        Map<String, Optional<Employee>> secondHighestByDept =
-                employees.stream()
-                        .collect(Collectors.groupingBy(
-                                Employee::getDept,
-                                Collectors.collectingAndThen(
-                                        Collectors.toList(),
-                                        list -> list.stream()
-                                                .sorted(Comparator.comparingDouble(Employee::getSalary).reversed())
-                                                .skip(1) // skip highest
-                                                .findFirst()
-                                )
-                        ));
+//        Map<String, Optional<Employee>> secondHighestByDept =
+//                employees.stream()
+//                        .collect(Collectors.groupingBy(
+//                                Employee::getDept,
+//                                Collectors.collectingAndThen(
+//                                        Collectors.toList(),
+//                                        list -> list.stream()
+//                                                .sorted(Comparator.comparingDouble(Employee::getSalary).reversed())
+//                                                .skip(1) // skip highest
+//                                                .findFirst()
+//                                )
+//                        ));
 
-        // Print results
-        secondHighestByDept.forEach((dept, emp) ->
-                System.out.println(dept + " -> " + emp.orElse(null)));
+//        // Print results
+//        secondHighestByDept.forEach((dept, emp) ->
+//                System.out.println(dept + " -> " + emp.orElse(null)));
+        
+        
+        
     }
 }
