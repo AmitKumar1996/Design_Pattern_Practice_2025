@@ -33,6 +33,7 @@ public class uppercase {
 		int i=0;
 		  
 		for(Integer l:List) {
+			
 			int temp=target-l;
 			if(map.containsKey(temp)) {
 				System.out.println(l+"-->>"+temp);
