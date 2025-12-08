@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class BiharElectionVoting {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
         int jdu = 0, rjd = 0, bjp = 0, inc = 0, cpi = 0;
         System.out.println("===== 🗳️ Bihar Election Voting System =====");
         System.out.print("Enter number of voters: ");
