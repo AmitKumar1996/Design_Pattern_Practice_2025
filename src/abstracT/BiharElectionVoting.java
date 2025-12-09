@@ -19,7 +19,6 @@ public class BiharElectionVoting {
             System.out.println("5. Communist Party of India (Marxist–Leninist) - 🌾⭐");
             System.out.print("Your choice (1–5): ");
             int choice = sc.nextInt();
-
             switch (choice) {
                 case 1 -> { jdu++; System.out.println("✅ You voted for Janata Dal (United) 🏹"); }
                 case 2 -> { rjd++; System.out.println("✅ You voted for Rashtriya Janata Dal 🏮"); }
