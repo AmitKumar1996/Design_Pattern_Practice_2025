@@ -9,7 +9,6 @@ public class BiharElectionVoting {
         System.out.println("===== 🗳️ Bihar Election Voting System =====");
         System.out.print("Enter number of voters: ");
         int voters = sc.nextInt();
-
         for (int i = 1; i <= voters; i++) {
             System.out.println("\nVoter " + i + ", please cast your vote:");
             System.out.println("1. Janata Dal (United) - 🏹");
