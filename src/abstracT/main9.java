@@ -59,7 +59,7 @@ public class main9 {
 	public static void main(String[] args) {
 		
 //		
-	String s="aaabbbbccaabbzzzzzx";
+	String s="aaabbbbccaabbzzzzzxx";
 		
 	//String s="aabb";
 	     // a3b4c2a2b2z1
@@ -75,7 +75,7 @@ public class main9 {
 	  for(int i=0;i<ch.length;i++) {
 		  if(i==ch.length-1) {
 			  if(ch[i]==ch[ch.length-1]) {
-				  System.out.println(ch[i]+"->"+2+"hi");
+				  System.out.println(ch[i]+"->"+2);
 				  break;
 			  }
 		  }
