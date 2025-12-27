@@ -27,6 +27,12 @@ public class main25 {
 		 
 		 
 		 range.forEach(i-> System.out.println((char)i));
+		 
+		 
+		
+		
+		
+		
 		
 //		 
 //		 String S="amit";
