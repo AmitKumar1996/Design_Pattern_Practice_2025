@@ -16,7 +16,7 @@ class Demo extends Custom {
     void greeting() { }
 }
 
-interface Example {
+interface Example implement Demo{
     int x = 10;
     static int y = 19;
 
@@ -40,3 +40,36 @@ public class Anuj27 {
     public static void main(String[] args) {
     }
 }
+
+
+
+class A{
+	void m1() {
+		
+	}
+}
+
+class B  {
+	//A a=new A();
+	//A::m1();
+	//@Autowired
+	//private A a;
+	
+	@Overide
+	hashCode(){
+		
+	}
+	
+	equal(){
+		
+	}
+	
+	
+	
+	
+}
+
+
+
+
+
