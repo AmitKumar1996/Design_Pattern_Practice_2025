@@ -60,9 +60,7 @@ public class Main29 {
 	
 	Stock s=new Stock();
 	
-	
-	
-	
+
 	List<Stock> log = List.of(
 	new Stock("P1", "W1", -30),
 	new Stock("P1", "W2", -60),
@@ -72,35 +70,24 @@ public class Main29 {
 	
 	for(int i=0;i<log.size();i++) {
 		for(Map.Entry<String, Map<String, Integer>> id:currentStock.entrySet() ) {
-			System.out.println();
-			
-			if(log.get(i).equals(id.getKey())) {
+			if(log.get(i).getId().equals(id.getKey())) {
 				
-//				for(Map.Entry<String, Integer> iner:id.getValue().entrySet()) {
-//					
-//					if(iner.getKey().equals())
-//				}
+				for(Map.Entry<String, Integer> iner:id.getValue().entrySet()) {
+					
+					if(log.get(i).getWhereHouse().equals(iner.getKey())) 
+					{
+						
+						iner.setValue(log.get(i).getStock()+iner.getValue());
+				
+				}
 				
 				
 			}
 			
 		}
+		
+		
 	}
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 //	Name Dept Score
@@ -128,16 +115,19 @@ public class Main29 {
 		   new score("F",91)
 			);
 	
-	of.stream().collect(Collectors.groupingBy(score :: getDept), Collectors.maxBy(Comparator(score :: getMarks)));
+	//of.stream().collect(Collectors.groupingBy(score :: getDept), Collectors.maxBy(Comparator(score :: getMarks)));
 	
 	
 	
 
 
 }
+	
+
+	System.out.println(currentStock);
 
 
 
-	}
+	}}
 
 
