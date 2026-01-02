@@ -1,6 +1,6 @@
 package abstracT;
 
-public class Anuj24 {
+public class Kadanes_algorithm  {
 
     public static void main(String[] args) {
 

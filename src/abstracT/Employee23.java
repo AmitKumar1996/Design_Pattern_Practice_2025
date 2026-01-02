@@ -49,6 +49,7 @@ public class Employee23 {
         Employee23 o3 = new Employee23("C", 300);
         Employee23 o4 = new Employee23("D", 400);
         Employee23 o5 = new Employee23("E", 500);
+        Employee23 o6 = new Employee23("Ag", 60);
 
    
         List<Employee23> list = new ArrayList<>();
@@ -57,8 +58,9 @@ public class Employee23 {
         list.add(o3);
         list.add(o4);
         list.add(o5);
+        list.add(o6);
 
-        System.out.println(list);
+        //System.out.println(list);
 
         List<Employee23> sortedList = list.stream()
                 .sorted(Comparator.comparingInt(Employee23::getSalary))
