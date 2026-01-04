@@ -56,10 +56,10 @@ public class DailyQuestions {
 //			
 //		}
 		
-		
-		Optional<Integer> first = Arrays.stream(A).boxed().distinct().sorted(Comparator.reverseOrder()).skip(1).findFirst();
-		System.out.println(first.get());
-	
+//		
+//		Optional<Integer> first = Arrays.stream(A).boxed().distinct().sorted(Comparator.reverseOrder()).skip(1).findFirst();
+//		System.out.println(first.get());
+//	
 
 	}
 

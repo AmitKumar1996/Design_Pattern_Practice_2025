@@ -13,7 +13,7 @@ public class comanElements {
 
 l1 ={1,2,3,4,5,6,9,10,11}
 
-l2 = {1,3,5,7,9,11} o/p - 1,3,5,9,11
+l2 = {1,3,5,7,9,11} o/p -    1,3,5,9,11
 	 * */
 
 	public static void main(String[] args) {
@@ -35,6 +35,8 @@ l2 = {1,3,5,7,9,11} o/p - 1,3,5,9,11
         
         int l=arr.length-1;
         int max=arr[l];
+        
+        
         
         System.out.print(" "+arr[l]);
 

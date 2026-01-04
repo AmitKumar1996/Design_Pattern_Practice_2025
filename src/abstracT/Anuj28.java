@@ -35,10 +35,10 @@ public class Anuj28 {
 		
 		
 		
-		Optional<Integer> first = Arrays.stream(A).boxed().distinct()
+		 Integer orElse = Arrays.stream(A).boxed().distinct()
 		.sorted(Comparator.reverseOrder())
 		.skip(1)
-		.findFirst();
+		.findFirst().orElse(-1);
 		
 		//System.out.println(first.get());
 	  long coung =Arrays.stream(A)
@@ -74,7 +74,7 @@ public class Anuj28 {
 	List<List<String>> flatmap=	List.of(List.of("a","b"),List.of("c","d"),List.of("e","f"));
 		
 		
-	//	System.out.println(flatmap);
+	//	System.out.println("flatmap"+flatmap);
 		
 		
  List<String> sl=	flatmap.stream().flatMap(List::stream).toList();

@@ -2,6 +2,14 @@ package abstracT;
 
 public class Block  
 {    
+	
+//	4️⃣ Official Rule (Interview Answer)
+	
+	//  From Java 7 onwards, a Java program cannot run without a main() method, even if static blocks are present.
+	
+	
+	
+	
     // 🔍 Static Block-1
     // This block runs when the class is loaded—only once.
     static  

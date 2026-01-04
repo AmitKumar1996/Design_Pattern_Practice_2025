@@ -57,7 +57,7 @@ for(char s: str.toCharArray()) {
 	
 }
 
-System.out.println(ans);
+//System.out.println(ans);
 
 // Java 8 Program to get Highest paid Employee in Each department using stream api?
 
@@ -75,13 +75,29 @@ empList.add(new EmployeeRecord("Support", 160.0, "Priya"));
 empList.add(new EmployeeRecord("IT", 290.0, "Vikas"));
 
 
-Map<String, Optional<EmployeeRecord>> collect = empList.stream().collect(Collectors
-		.groupingBy(EmployeeRecord :: getDepartment, Collectors
-		.maxBy(Comparator.comparing(EmployeeRecord :: getSalry))));
+//Map<String, Optional<EmployeeRecord>> collect = empList.stream().collect(Collectors
+//		.groupingBy(EmployeeRecord :: getDepartment, Collectors
+//		.maxBy(Comparator.comparing(EmployeeRecord :: getSalry))));
+
+
+Map<String, Object> secondHighestSalaryByDept =
+empList.stream()
+    .collect(Collectors.groupingBy(
+        EmployeeRecord::getDepartment,
+        Collectors.collectingAndThen(
+            Collectors.toList(),
+            list -> list.stream()
+                .sorted(Comparator.comparingDouble(EmployeeRecord::getSalry).reversed())
+                .skip(1)
+                .findFirst()
+        )
+    ));
 
 
 
-System.out.println(collect);
+
+
+System.out.println(secondHighestSalaryByDept);
 
 	
 	
