@@ -46,7 +46,6 @@ public class Anuj3_26 {
 		         
 		         System.out.println(list2);
 		         
-		         
 
 List<EmployeeRecord> empList = new ArrayList<>();
 
