@@ -71,8 +71,7 @@ public class Anuj_7_26 {
 			System.out.println();
 		}
 		
-		
-		
+	
 		
 		
 	}
