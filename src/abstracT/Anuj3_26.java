@@ -15,9 +15,7 @@ public class Anuj3_26 {
 	
 
 	public static void  main( String  Args[]) {
-		
-		
-		
+	
 		String s="anujyadav";
 		
 		 LinkedHashMap<Character, Long> collect = s.chars().mapToObj(c->(char)c)
