@@ -42,8 +42,7 @@ public class Anuj3_26 {
 		        	 
 		         ).distinct().toList();
 		         
-		         System.out.println(list2);
-		         
+		         System.out.println(list2);		         
 
 List<EmployeeRecord> empList = new ArrayList<>();
 
