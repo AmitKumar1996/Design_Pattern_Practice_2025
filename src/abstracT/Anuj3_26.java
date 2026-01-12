@@ -33,8 +33,6 @@ public class Anuj3_26 {
 		 System.out.println(first);
 		 
 		 List<int[]> asList = Arrays.asList(A);
-		 
-		 
 		   List<Integer> list = Arrays.stream(A).boxed().toList();
 		   
 		         List<Integer> list2 = list.stream().sorted((a,b)->
