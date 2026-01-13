@@ -10,20 +10,20 @@ import java.util.Optional;
 import java.util.function.Function;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Anuj3_26 {
 	
 
 	public static void  main( String  Args[]) {
 	
-		String s="anujyadav";
+		String s="banbujyadav";
 		
-		 LinkedHashMap<Character, Long> collect = s.chars().mapToObj(c->(char)c)
+		   Optional<Long> first2 = s.chars().mapToObj(c->(char)c)
 		.collect(Collectors
 				.groupingBy(Function.identity(),LinkedHashMap :: new , 
-						Collectors.counting()));
-		 
-		 System.out.println(collect);
+						Collectors.counting())).entrySet().stream().filter(i->i.getValue()>1).map(m->m.getValue()).findFirst();
+		System.out.println(first2.get());
 		 
 		 int[] A= {1,2,3,4,5,7,6,5};
 		 
