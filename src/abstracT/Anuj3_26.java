@@ -42,18 +42,24 @@ public class Anuj3_26 {
 		         
 		         System.out.println(list2);		         
 
-List<EmployeeRecord> empList = new ArrayList<>();
+List<EmployeeRecord> empList =Arrays.asList(new EmployeeRecord("IT", 200.0, "Amit"),
+		new EmployeeRecord("HR", 150.0, "Rohit"),
+		new EmployeeRecord("Finance", 300.0, "Neha"),
+		
+		new EmployeeRecord("IT", 250.0, "Suman"),
+		
+		new EmployeeRecord("Admin", 180.0, "Pooja"),
+		new EmployeeRecord("HR", 220.0, "Ankit"),
+		
+		new EmployeeRecord("Finance", 275.0, "Kavita"),
+		new EmployeeRecord("IT", 320.0, "Rahul"),
+		new EmployeeRecord("Support", 160.0, "Priya"),
+		new EmployeeRecord("IT", 290.0, "Vikas")
+		
+		
+		
+		);
 
-empList.add(new EmployeeRecord("IT", 200.0, "Amit"));
-empList.add(new EmployeeRecord("HR", 150.0, "Rohit"));
-empList.add(new EmployeeRecord("Finance", 300.0, "Neha"));
-empList.add(new EmployeeRecord("IT", 250.0, "Suman"));
-empList.add(new EmployeeRecord("Admin", 180.0, "Pooja"));
-empList.add(new EmployeeRecord("HR", 220.0, "Ankit"));
-empList.add(new EmployeeRecord("Finance", 275.0, "Kavita"));
-empList.add(new EmployeeRecord("IT", 320.0, "Rahul"));
-empList.add(new EmployeeRecord("Support", 160.0, "Priya"));
-empList.add(new EmployeeRecord("IT", 290.0, "Vikas"));
 
 //first salary
 Map<String, Optional<EmployeeRecord>> collect2 = empList.stream().collect(Collectors

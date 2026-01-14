@@ -13,6 +13,7 @@ class TreeNode {
 
 public class BSTSearch {
     public boolean searchBST(TreeNode root, int target) {
+    	
         if (root == null) {
             return false; // target not found
         }
