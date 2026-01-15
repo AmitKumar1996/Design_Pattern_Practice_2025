@@ -22,7 +22,6 @@ public class AdditionMagic {
         }
         return a + b;
     }
-
     // String + String
     public String add(String a, String b) {
         return a + b;
