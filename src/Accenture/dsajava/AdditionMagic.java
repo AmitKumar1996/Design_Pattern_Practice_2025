@@ -26,7 +26,6 @@ public class AdditionMagic {
     public String add(String a, String b) {
         return a + b;
     }
-
     // 🔹 Main method (for testing)
     public static void main(String[] args) {
         AdditionMagic am = new AdditionMagic();
