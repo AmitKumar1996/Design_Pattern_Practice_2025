@@ -14,7 +14,6 @@ public class AdditionMagic {
         // Otherwise → rounded to 2 decimals
         return String.format("%.2f", sum);
     }
-
     // double + String
     public String add(double a, String b) {
         if (a == Math.floor(a)) {
