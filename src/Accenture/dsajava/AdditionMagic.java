@@ -10,7 +10,6 @@ public class AdditionMagic {
         if (sum == Math.floor(sum)) {
             return String.format("%.1f", sum);
         }
-
         // Otherwise → rounded to 2 decimals
         return String.format("%.2f", sum);
     }
