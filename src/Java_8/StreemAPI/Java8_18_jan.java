@@ -2,9 +2,11 @@ package Java_8.StreemAPI;
 
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
@@ -35,6 +37,18 @@ public class Java8_18_jan {
 		int[] B= {2,4,6,2,1,8,9,0};
 		String str="madam2";
 		
+		 Optional<Character> first = str.chars().mapToObj(c->(char)c).collect(Collectors
+				 .groupingBy(i->i,LinkedHashMap :: new, Collectors.counting()))
+		.entrySet().stream().filter(i-> i.getValue()>1).map(i->i.getKey()).findFirst();
+		
+		System.out.println(first.get());
+		
+		
+//		for(Map.Entry i:likedHashMap.entrySet() ) {
+//			System.out.println(i.getKey()+"->"+i.getValue());
+//			
+//		}
+
 	int[] c=IntStream.concat(Arrays.stream(A), Arrays.stream(B)).sorted().distinct().toArray();
 //	for(int j:c) {
 //		
