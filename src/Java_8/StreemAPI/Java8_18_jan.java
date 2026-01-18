@@ -43,6 +43,10 @@ public class Java8_18_jan {
 	List<String> str=Arrays.asList("Amit","Sumit", "Raja","kumar");
 	
     str.stream().sorted(Comparator.reverseOrder()).forEach(System.out::println);
+    
+    Map<Integer,List<String>> collect = str.stream().collect(Collectors.groupingBy(String :: length));
+    
+    System.out.println(collect);
 	
 	
 	
