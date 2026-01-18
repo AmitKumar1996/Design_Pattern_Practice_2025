@@ -33,6 +33,7 @@ public class Java8_18_jan {
 		}
 		
 		int[] B= {2,4,6,2,1,8,9,0};
+		String str="madam2";
 		
 	int[] c=IntStream.concat(Arrays.stream(A), Arrays.stream(B)).sorted().distinct().toArray();
 //	for(int j:c) {
@@ -40,15 +41,21 @@ public class Java8_18_jan {
 //		System.out.print(j+" ");
 //	}
 	
-	List<String> str=Arrays.asList("Amit","Sumit", "Raja","kumar");
+//	List<String> str=Arrays.asList("Amit","Sumit", "Raja","kumar");
+//	
+//    str.stream().sorted(Comparator.reverseOrder()).forEach(System.out::println);
+//    
+//    Map<Integer,List<String>> collect = str.stream().collect(Collectors.groupingBy(String :: length));
+//    
+//    System.out.println(collect);
 	
-    str.stream().sorted(Comparator.reverseOrder()).forEach(System.out::println);
-    
-    Map<Integer,List<String>> collect = str.stream().collect(Collectors.groupingBy(String :: length));
-    
-    System.out.println(collect);
 	
-	
+	boolean noneMatch = IntStream.range(0, str.length()/2).noneMatch(i->str.charAt(i) !=str.charAt(str.length()-1-i));
+	if(noneMatch==true)
+	System.out.println(str);
+	else {
+		System.out.println("Not palandrome");
+	}
 	
 	
 	
