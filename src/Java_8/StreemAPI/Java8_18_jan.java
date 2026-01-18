@@ -40,7 +40,6 @@ public class Java8_18_jan {
 //		System.out.print(j+" ");
 //	}
 	
-	
 	List<String> str=Arrays.asList("Amit","Sumit", "Raja","kumar");
 	
     str.stream().sorted(Comparator.reverseOrder()).forEach(System.out::println);
