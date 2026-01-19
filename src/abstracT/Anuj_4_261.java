@@ -21,7 +21,6 @@ public class Anuj_4_261 {
 //        }
 //        
 //        System.out.println("----------------------------------------------------------");
-
         List<List<Integer>> intervalAns = new ArrayList<>();
 
         int start = intervals.get(0).get(0); //1
