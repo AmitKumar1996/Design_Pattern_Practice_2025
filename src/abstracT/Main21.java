@@ -10,10 +10,7 @@ public class Main21 {
 		
 		 List<String> name=Arrays.asList("Amit","Sumit");
 		 List<Integer> age=Arrays.asList(29,28);
-		 
-		 
-		
-		
+		 	
 		
 	}
 	
