@@ -12,9 +12,6 @@ public class Main21 {
 		 List<Integer> age=Arrays.asList(29,28);
 		 
 		 
-		 
-		 
-		 
 		
 		
 		
