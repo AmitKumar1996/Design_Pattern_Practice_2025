@@ -18,7 +18,6 @@ public class Main21 {
 		
 	}
 	
-	
 	//second Highest salry;
 
 	public static void main(String[] args) {
