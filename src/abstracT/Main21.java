@@ -24,10 +24,7 @@ public void m1() {
 
 public class Main21 {
 		
-	public static void main(String[] args) {
-		
-		
-		
+	public static void main(String[] args) {		
 		//P p = new P();
 		
 		P o2=new C();
