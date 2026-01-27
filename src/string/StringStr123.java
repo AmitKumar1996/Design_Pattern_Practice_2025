@@ -1,5 +1,7 @@
 package string;
 
+import java.util.stream.Collectors;
+
 public class StringStr123 {
 
 	public static void main(String[] args) {
@@ -14,12 +16,20 @@ public class StringStr123 {
 		
 		
 		
-		System.out.println(s1==s2);
-		System.out.println(s1.equals(s2));
-		System.out.println(s1.intern()==s2);
+//		System.out.println(s1==s2);
+//		System.out.println(s1.equals(s2));
+//		System.out.println(s1.intern()==s2);
+//
+//		System.out.println(s2==s4);
+		
+		
+		String s="anuj";
+		
+		String reduce = s.chars().mapToObj(c->String.valueOf((char)c)).reduce("",(a,b)->b+a);
 
-		System.out.println(s2==s4);
-
+		
+		System.out.println(reduce);
+		
 	}
 
 }
