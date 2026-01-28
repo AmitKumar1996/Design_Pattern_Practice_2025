@@ -21,14 +21,16 @@ public class StringStr123 {
 //		System.out.println(s1.intern()==s2);
 //
 //		System.out.println(s2==s4);
-		
-		
-		String s="anuj";
+			
+		String s="anuj amit";
 		
 		String reduce = s.chars().mapToObj(c->String.valueOf((char)c)).reduce("",(a,b)->b+a);
 
 		
 		System.out.println(reduce);
+		String s21="12a3b4";
+		int sum = s21.chars().filter(c->Character.isDigit(c)).map(c-> c-'0').sum();
+		System.out.println(sum);
 		
 	}
 
