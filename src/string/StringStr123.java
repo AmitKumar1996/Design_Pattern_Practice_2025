@@ -22,8 +22,6 @@ public class StringStr123 {
 		String s="anuj amit";
 		
 		String reduce = s.chars().mapToObj(c->String.valueOf((char)c)).reduce("",(a,b)->b+a);
-
-		
 		System.out.println(reduce);
 		String s21="12a3b4";
 		int sum = s21.chars().filter(c->Character.isDigit(c)).map(c-> c-'0').sum();
