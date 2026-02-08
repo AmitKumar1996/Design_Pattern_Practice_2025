@@ -1,7 +1,6 @@
 package string;
 
 import java.util.stream.Collectors;
-
 public class StringStr123 {
 	public static void main(String[] args) {
 		String s1= new String("hello");
@@ -18,7 +17,6 @@ public class StringStr123 {
 		String s21="12a3b4";
 		int sum = s21.chars().filter(c->Character.isDigit(c)).map(c-> c-'0').sum();
 		System.out.println(sum);
-		
 	}
 
 }
