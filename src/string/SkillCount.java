@@ -27,7 +27,10 @@ public class SkillCount {
                          Collectors.counting()
                      ));
 
-        System.out.println(skillCount); // Output: {Java=2, Oracle=1, Angular=3}
+        System.out.println(skillCount);
+        // Output: {Java=2, Oracle=1, Angular=3}
+        
+        
         
     }
 }
