@@ -28,7 +28,7 @@ public class SkillCount {
                      ));
 
         System.out.println(skillCount);
-             // Output: {Java=2, Oracle=1, Angular=3}
+         // Output: {Java=2, Oracle=1, Angular=3}
         
         
         
