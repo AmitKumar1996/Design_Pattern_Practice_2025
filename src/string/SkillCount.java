@@ -19,7 +19,7 @@ public class SkillCount {
             new Employee("Manoj", 2, List.of("Java", "Angular")),
             new Employee("Surya", 3, List.of("Angular"))
         );
-        Map<String, Long> skillCount =
+            Map<String, Long> skillCount =
             employees.stream()
                      .flatMap(e -> e.skills.stream())
                      .collect(Collectors.groupingBy(
