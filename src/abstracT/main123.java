@@ -36,7 +36,7 @@ public class main123 {
 	.max(Map.Entry.comparingByValue()).get().getKey();
 	  System.out.println(r);
 	  
-	       //LinkedHashMap<Character, Integer> map= new LinkedHashMap<Character, Integer>();
+	         //LinkedHashMap<Character, Integer> map= new LinkedHashMap<Character, Integer>();
 	  
 	  
 	
