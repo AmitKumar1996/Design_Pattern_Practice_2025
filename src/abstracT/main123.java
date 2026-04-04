@@ -37,10 +37,6 @@ public class main123 {
 	  System.out.println(r);
 	  
 	         //LinkedHashMap<Character, Integer> map= new LinkedHashMap<Character, Integer>();
-	  
-	  
-	
-		
 		
 		//System.out.println(map);
 		
