@@ -18,8 +18,11 @@ class P{
 class C extends P{
 public void m1() {
    System.out.println("m2");
-	}
 	
+
+
+}
+ 	
 }
 public class Main21 {
 		
