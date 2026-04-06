@@ -7,7 +7,6 @@ import java.util.Arrays;
 import java.util.List;
 
 
-
 class P{
 	public void m1() {
 		
@@ -18,8 +17,6 @@ class P{
 class C extends P{
 public void m1() {
    System.out.println("m2");
-	
-
 
 }
  	
