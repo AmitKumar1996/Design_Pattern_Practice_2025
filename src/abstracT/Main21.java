@@ -25,7 +25,6 @@ public class Main21 {
 		
 	public static void main(String[] args) {		
 		//P p = new P();
-		
 		P o2=new C();
 		System.out.println();
 		o2.m1();
