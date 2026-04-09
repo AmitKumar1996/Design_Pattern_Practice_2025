@@ -12,9 +12,8 @@ public class main62 {
 		
 		String s="abcdcdd";
 		
-Map<Character , Integer> newMap= s.chars().mapToObj(c->(char)c).collect(Collectors.groupingBy( Function.identity(), LinkedHashMap :: new ,Collectors.counting()));
+     Map<Character , Integer> newMap= s.chars().mapToObj(c->(char)c).collect(Collectors.groupingBy( Function.identity(), LinkedHashMap :: new ,Collectors.counting()));
 
-	
 	
 	}
 
