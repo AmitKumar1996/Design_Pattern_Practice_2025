@@ -12,7 +12,7 @@ public class main62 {
 		
 		String input="abcdcdd";
 		
-     Map<Character , Integer> map= input.chars().mapToObj(c->(char)c).collect(Collectors.groupingBy( Function.identity(), LinkedHashMap :: new ,Collectors.counting()));
+         Map<Character , Integer> map= input.chars().mapToObj(c->(char)c).collect(Collectors.groupingBy( Function.identity(), LinkedHashMap :: new ,Collectors.counting()));
 
 	
 	}
